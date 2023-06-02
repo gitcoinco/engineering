@@ -7,7 +7,6 @@ import { FaAddressCard, FaEnvelope, FaPhoneAlt } from "react-icons/fa/index.js";
 
 const entry = await getEntryBySlug("pages", "contact");
 const { contact_form_action } = config.params;
-const { address, email, phone } = config.contactinfo;
 const { title, description, meta_title, image } = entry.data;
 ---
 
@@ -23,29 +22,6 @@ const { title, description, meta_title, image } = entry.data;
       <div class="row md:gx-5 gy-5">
         <div class="sm:col-5 md:col-4">
           <p class="mb-8 text-2xl font-bold text-theme-dark">Contact Info</p>
-          <ul class="flex flex-col space-y-8">
-            <li>
-              <div class="flex text-theme-dark items-center text-xl">
-                <FaAddressCard className="mr-3 text-primary" />
-                <p class="font-semibold">Address</p>
-              </div>
-              <p set:html={markdownify(address)} class="mt-2 leading-5 pl-8" />
-            </li>
-            <li>
-              <div class="flex text-theme-dark items-center text-xl">
-                <FaEnvelope className="mr-3 text-primary" />
-                <p class="font-semibold">Email</p>
-              </div>
-              <p set:html={markdownify(email)} class="mt-2 leading-5 pl-8 content" />
-            </li>
-            <li>
-              <div class="flex text-theme-dark items-center text-xl">
-                <FaPhoneAlt className="mr-3 text-primary" />
-                <p class="font-semibold">Phone</p>
-              </div>
-              <p set:html={markdownify(phone)} class="mt-2 leading-5 pl-8" />
-            </li>
-          </ul>
         </div>
         <div class="sm:col-7 md:col-8">
           <form class="contact-form row gy-2 justify-center" method="POST" action={contact_form_action}>

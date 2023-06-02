@@ -23,7 +23,7 @@ const { title, description, authors, categories, image, date, tags } =
       <div class="md:col-10 text-center">
         <h1 set:html={markdownify(title)} class="h2" />
         <ul class="mt-4 flex flex-wrap items-center justify-center text-text">
-          <li class="mx-3">
+          <li class="mx-3 flex">
             {
               allAuthors
                 .filter((author) =>
@@ -34,7 +34,7 @@ const { title, description, authors, categories, image, date, tags } =
                 .map((author, i) => (
                   <a
                     href={`/authors/${slugify(author.slug)}`}
-                    class="flex items-center hover:text-primary font-medium"
+                    class="flex items-center hover:text-primary font-medium mr-3"
                   >
                     {author.data.image && (
                       <Image

@@ -1,14 +1,14 @@
 {
   "site": {
-    "title": "Bookworm Light Astro | Blog Template",
-    "base_url": "https://bookworm-light-astro.vercel.app",
+    "title": "Gitcoin Engineering Blog",
+    "base_url": "https://engineering.gitcoin.co",
     "base_path": "/",
     "trailing_slash": false,
-    "favicon": "/images/favicon.png",
-    "logo": "/images/logo.png",
-    "logo_width": "200",
-    "logo_height": "34",
-    "logo_text": "Bookworm Light"
+    "favicon": "/images/favicon.svg",
+    "logo": "/images/logo.svg",
+    "logo_width": "27",
+    "logo_height": "32",
+    "logo_text": null
   },
 
   "settings": {
@@ -17,19 +17,14 @@
   },
 
   "metadata": {
-    "meta_author": "Themefisher",
+    "meta_author": "Gitcoin",
     "meta_image": "/images/og-image.png",
-    "meta_description": "Bookworm Light Astro Blog Template"
+    "meta_description": "The Gitcoin Engineering Blog"
   },
 
   "params": {
     "contact_form_action": "#",
-    "copyright": "Copyright © 2023 a theme by [Themefisher](https://themefisher.com)"
-  },
-
-  "contactinfo": {
-    "address": "355 S Grand Ave <br/> Los Angeles, CA 90071",
-    "email": "info@bookworm.org",
-    "phone": "+800 567 1234"
+    "copyright": "Copyright © 2023 Gitcoin"
   }
+
 }
