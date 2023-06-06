@@ -20,7 +20,8 @@ const {
 <a href="/" class="navbar-brand block">
   {
     src || logo ? (
-      <Image
+      <>
+        <img
         width={logo_width.replace("px", "") * 2}
         height={logo_height.replace("px", "") * 2}
         src={src ? src : logo}
@@ -28,8 +29,20 @@ const {
         style={{
           height: logo_height.replace("px", "") + "px",
           width: logo_width.replace("px", "") + "px",
+          marginRight: "12px",
         }}
       />
+      <img
+        width={290}
+        height={20}
+        src={src ? src : logo_text}
+        alt={title}
+        style={{
+          height: "20px",
+          width: "290px",
+        }}
+      />
+      </>
     ) : logo_text ? (
       logo_text
     ) : (
