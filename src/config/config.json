@@ -4,11 +4,11 @@
     "base_url": "https://gravityblast.gitcoin.io",
     "base_path": "/gitcoin-eng-blog",
     "trailing_slash": false,
-    "favicon": "/images/favicon.svg",
-    "logo": "/images/logo.svg",
+    "favicon": "/gitcoin-eng-blog/images/favicon.svg",
+    "logo": "/gitcoin-eng-blog/images/logo.svg",
     "logo_width": "27",
     "logo_height": "32",
-    "logo_text": "/images/gitcoin-engineering.svg"
+    "logo_text": "/gitcoin-eng-blog/images/gitcoin-engineering.svg"
   },
 
   "settings": {
@@ -18,7 +18,7 @@
 
   "metadata": {
     "meta_author": "Gitcoin",
-    "meta_image": "/images/og-image.png",
+    "meta_image": "/gitcoin-eng-blog/images/og-image.png",
     "meta_description": "The Gitcoin Engineering Blog"
   },
 
