@@ -1,8 +1,8 @@
 {
   "site": {
     "title": "Gitcoin Engineering Blog",
-    "base_url": "https://engineering.gitcoin.co",
-    "base_path": "/",
+    "base_url": "https://gravityblast.gitcoin.io",
+    "base_path": "/gitcoin-eng-blog",
     "trailing_slash": false,
     "favicon": "/images/favicon.svg",
     "logo": "/images/logo.svg",
