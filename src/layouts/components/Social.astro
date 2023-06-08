@@ -33,6 +33,7 @@ import {
   IoLogoWhatsapp,
   IoLogoYoutube,
   IoMail,
+  IoLogoTwitch,
 } from "react-icons/io5/index.js";
 
 const {
@@ -67,6 +68,7 @@ const {
   address,
   skype,
   website,
+  twitch,
 } = source;
 ---
 
@@ -491,6 +493,20 @@ const {
           rel="noopener noreferrer nofollow"
         >
           <IoLocation />
+        </a>
+      </li>
+    )
+  }
+  {
+    twitch && (
+      <li class="inline-block">
+        <a
+          aria-label="location"
+          href={twitch}
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+        >
+          <IoLogoTwitch />
         </a>
       </li>
     )
