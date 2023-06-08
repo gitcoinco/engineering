@@ -10,7 +10,7 @@ const postsCollection = defineCollection({
     date: z.date().optional(),
     image: z.string().optional(),
     authors: z.array(z.string()).default(["admin"]),
-    categories: z.array(z.string()).default(["others"]),
+    categories: z.array(z.enum(["passport", "grants-stack", "allo", "gitcoin"])).optional(),
     tags: z.array(z.string()).default(["others"]),
     draft: z.boolean().optional(),
   }),

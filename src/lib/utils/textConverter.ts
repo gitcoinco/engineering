@@ -21,10 +21,10 @@ export const humanize = (content: string) => {
 
   return content
     .replace(/^[\s_]+|[\s_]+$/g, "")
-    .replace(/[_\s]+/g, " ")
-    .replace(/^[a-z]/, function (m) {
+    .replace(/[-_\s]+/g, " ")
+    .replace(/^[a-z]/, function(m) {
       return m.toUpperCase();
-    });
+    })
 };
 
 // plainify
