@@ -1,49 +1,34 @@
 {
   "main": [
     {
-      "name": "Home",
-      "url": "/"
+      "name": "Allo",
+      "url": "/categories/allo"
     },
     {
-      "name": "About",
-      "url": "/about"
+      "name": "Grants Stack",
+      "url": "/categories/grants-stack"
     },
     {
-      "name": "Contact",
-      "url": "/contact"
-    },
-    {
-      "name": "Pages",
-      "url": "",
-      "hasChildren": true,
-      "children": [
-        {
-          "name": "Authors",
-          "url": "/authors"
-        },
-        {
-          "name": "Categories",
-          "url": "/categories"
-        },
-        {
-          "name": "Tags",
-          "url": "/tags"
-        },
-        {
-          "name": "Privacy Policy",
-          "url": "/privacy-policy"
-        }
-      ]
+      "name": "Passport",
+      "url": "/categories/passport"
     }
   ],
   "footer": [
     {
-      "name": "About",
-      "url": "/about"
+      "name": "Gitcoin",
+      "url": "https://gitcoin.co"
     },
     {
-      "name": "Contact",
-      "url": "/contact"
+      "name": "Allo",
+      "url": "/categories/allo"
+    },
+    {
+      "name": "Grants Stack",
+      "url": "/categories/grants-stack"
+    },
+    {
+      "name": "Passport",
+      "url": "/categories/passport"
     },
     {
       "name": "Privacy Policy",
