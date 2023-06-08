@@ -2,9 +2,9 @@
   "facebook": "",
   "twitter": "https://twitter.com/gitcoin",
   "instagram": "",
-  "youtube": "",
-  "linkedin": "",
-  "github": "",
+  "youtube": "https://www.youtube.com/@GitcoinMedia",
+  "linkedin": "https://www.linkedin.com/company/getgitcoin/",
+  "github": "https://github.com/gitcoinco",
   "gitlab": "",
   "medium": "",
   "codepen": "",
@@ -26,5 +26,7 @@
   "phone": "",
   "address": "",
   "skype": "",
-  "website": ""
+  "website": "https://gitcoin.co",
+  "discord": "https://gitcoin.co/discord",
+  "lenster": "https://lenster.xyz/u/gitcoin"
 }
