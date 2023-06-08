@@ -1,6 +1,7 @@
 ---
 import Base from "@layouts/Base.astro";
 import Posts from "@layouts/Posts.astro";
+import { getEntry } from "astro:content";
 import { getSinglePage } from "@lib/contentParser.astro";
 import { getTaxonomy } from "@lib/taxonomyParser.astro";
 import taxonomyFilter from "@lib/utils/taxonomyFilter";
@@ -20,15 +21,20 @@ const { category } = Astro.params;
 
 const posts = await getSinglePage("posts");
 const filterByCategory = taxonomyFilter(posts, "categories", category);
+const categoryPage = await getEntry('categories', category);
+const { Content } = await categoryPage.render();
 
-const title = humanize(category || "")
+console.log(categoryPage);
 ---
 
-<Base title={title || "Category"}>
+<Base title={categoryPage.data.title || "Category"}>
   <div class="section">
     <div class="container">
-      <p class="text-center mb-4">Showing Posts From</p>
-      <h1 class="h2 mb-16 text-center text-primary">{title}</h1>
+      <p class="mb-4">Showing Posts From</p>
+      <h1 class="h2 mb-16 text-primary">{categoryPage.data.title}</h1>
+      <div class="content">
+        <Content/>
+      </div>
       <Posts posts={filterByCategory} fluid={false} />
     </div>
   </div>

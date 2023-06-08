@@ -16,6 +16,22 @@ const postsCollection = defineCollection({
   }),
 });
 
+const categoryCollection = defineCollection({
+  schema: z.object({
+    id: z.string().optional(),
+    title: z.string(),
+    meta_title: z.string().optional(),
+    image: z.string().optional(),
+    social: z
+      .object({
+        twitter: z.string().optional(),
+        github: z.string().optional(),
+      })
+      .optional(),
+    draft: z.boolean().optional()
+  })
+});
+
 // Author collection schema
 const authorsCollection = defineCollection({
   schema: z.object({
@@ -53,4 +69,5 @@ export const collections = {
   posts: postsCollection,
   pages: pagesCollection,
   authors: authorsCollection,
+  categories: categoryCollection,
 };
